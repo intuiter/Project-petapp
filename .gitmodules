@@ -1,0 +1,3 @@
+[submodule "Petapp-CI_Pipeline"]
+	path = Petapp-CI_Pipeline
+	url = https://github.com/intuiter/Petapp-CI_Pipeline.git
