@@ -4,3 +4,6 @@
 [submodule "Petapp-CD_Pipeline"]
 	path = Petapp-CD_Pipeline
 	url = https://github.com/intuiter/Petapp-CD_Pipeline.git
+[submodule "Petapp-EKS_infra"]
+	path = Petapp-EKS_infra
+	url = https://github.com/intuiter/Petapp-EKS_infra.git
