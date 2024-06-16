@@ -3,7 +3,7 @@
 This DevOps lifecycle project focused on a Java-based Spring Boot application called Pet-clinic. The main goal is to use the GitOps tool ArgoCD to automate deployment operations, while integrating various DevOps tools at different stages to streamline tasks and ensure efficient operations.
 <p>&nbsp;</p>
 
-#### Streamlining the Workflow:
+## Streamlining the Workflow:
 
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/55ca1daf-8588-464a-92b0-29617949e3a8)
 
@@ -24,24 +24,24 @@ This DevOps lifecycle project focused on a Java-based Spring Boot application ca
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-#### Benefits of Automation:
+## Benefits of Automation:
 •	Faster Deployments: Automated builds and deployments lead to quicker delivery times.
 •	Improved Quality: Static code analysis and vulnerability scanning ensure code quality and security.
 •	Reduced Errors: Repeatable and automated processes minimize deployment errors.
 •	Increased Efficiency: DevOps tools streamline workflows, freeing up developer time.
 <p>&nbsp;</p>
 
-#### Demonstration:
+## Demonstration:
 •	Created two t2.medium EC2 instances and in one of the machines installed Jenkins, Maven and docker as shown below,
 <p>&nbsp;</p>
 
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/e8e21c4c-5e18-4089-8224-a1ec60024bda)
-<p>&nbsp;</p>
 
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/3c0f8435-9221-4186-946e-1ce9d06d3139)
-<p>&nbsp;</p>
+
 •	Integrated Jenkins wit Version control Git to get notified and push events post commits.
 <p>&nbsp;</p>
+
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/4cf1ae4c-53ce-44c7-9f4e-4de1c6ccf056)
 <p>&nbsp;</p>
 •	On the other EC2 instance created Sonarqube installed, along with docker and Jfrog will run as a container
@@ -49,6 +49,7 @@ This DevOps lifecycle project focused on a Java-based Spring Boot application ca
 •	The volume mapping in the host machine for which folder we are doing should have the same user id and permission as the folder inside the container. Only then you will have access on the host machine of that volume.
 •	For EC2, port 8081 and 8082 should be enabled,
 <p>&nbsp;</p>
+
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/7646eeaf-d1a0-43ec-b1dc-8bde88004ddd)
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/82e7027e-1bbf-4e0a-bbc8-3b26e68e5427)
 <p>&nbsp;</p>
@@ -73,20 +74,25 @@ This DevOps lifecycle project focused on a Java-based Spring Boot application ca
 <p>&nbsp;</p>
 •	Kubectl acts as the user interface (UI) for interacting with a Kubernetes cluster. It allows you to manage and manipulate services, nodes, and pods by creating, configuring, and modifying them.
 <p>&nbsp;</p>
+
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/74aa9ffa-edce-4400-851d-079b4881a5f3)
 <p>&nbsp;</p>
 •	Below is the end result of the application, showcasing the application logo and the registration process for pet clinic users, along with the respective specialists who examine the pets. MySQL is configured as the database tier for data storage.
 <p>&nbsp;</p>
+
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/bfdef04a-18e1-4e03-a876-9821fc962bdd)
 <p>&nbsp;</p>
 •	To showcase a change in the application feature or code, we updated the application with a new logo and triggered the pipeline. This process dynamically updates the application deployment manifest file with the new image tag, ensuring that the final feature update is automatically reflected as shown below.
 <p>&nbsp;</p>
+
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/4c60dbc9-c9fb-41d7-8603-6364887cd178)
 <p>&nbsp;</p>
 •	To monitor the health and performance of Kubernetes clusters, Prometheus is installed and integrated to collect metrics from nodes and services. These metrics and logs are then visualized through user-friendly dashboards in Grafana. Together, Prometheus and Grafana act as a powerful monitoring suite, enabling analysis and troubleshooting of application and optimization issues. 
 <p>&nbsp;</p>
+
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/8a7cc17d-6868-4a89-be72-74a88d6cbe3e)
 <p>&nbsp;</p>
+
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/41cf4a56-41e9-4b34-adc0-4ea573d9eef6)
 
 
