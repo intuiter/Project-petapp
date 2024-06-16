@@ -52,41 +52,45 @@ This DevOps lifecycle project focused on a Java-based Spring Boot application ca
 
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/7646eeaf-d1a0-43ec-b1dc-8bde88004ddd)
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/82e7027e-1bbf-4e0a-bbc8-3b26e68e5427)
+
+•	Below snap shows docker container logs running and successful initialization
 <p>&nbsp;</p>
-•	Below snap shows docker container logs running and successful in
-<p>&nbsp;</p>
+
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/f3153055-9e34-4234-9269-3b6df73d9c31)
-<p>&nbsp;</p>
+
 •	Post installation of tools, CI pipeline Job executes the respective stages of tasks for Sonarqube code analysis, Maven compilation generating .jar file consecutively uploading application to Jfrog artifactory repository named “my-jfrog” as below,
 <p>&nbsp;</p>
+
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/95e99677-33be-4b9e-91c3-3121f04778af)
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/f60fe0de-94d2-45da-b296-8b115a33124b)
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/f4666d1b-94df-458a-a364-b813f5177dc1)
-<p>&nbsp;</p>
+
 •	The JAR file moves to the Docker image build stage. This is built image with a unique build number or image tag. Docker image is then pushed to AWS ECR (Elastic Container Registry). For each version control change, a new image is created and pushed to ECR.
 <p>&nbsp;</p>
+
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/35d85312-65a2-4104-8589-0abfd13d9d7f)
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/669f377a-522a-4d9b-a8cd-f865fc000b84)
-<p>&nbsp;</p>
+
 •	ArgoCD detects changes in the Git repository, automatically syncing them with the Kubernetes pods running in the production environment. ArgoCD provides feature to verify App health status and in detailed K8s cluster availability.
 <p>&nbsp;</p>
+
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/23d808bf-68fa-4c4d-8e37-885fbcb71e03)
-<p>&nbsp;</p>
+
 •	Kubectl acts as the user interface (UI) for interacting with a Kubernetes cluster. It allows you to manage and manipulate services, nodes, and pods by creating, configuring, and modifying them.
 <p>&nbsp;</p>
 
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/74aa9ffa-edce-4400-851d-079b4881a5f3)
-<p>&nbsp;</p>
+
 •	Below is the end result of the application, showcasing the application logo and the registration process for pet clinic users, along with the respective specialists who examine the pets. MySQL is configured as the database tier for data storage.
 <p>&nbsp;</p>
 
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/bfdef04a-18e1-4e03-a876-9821fc962bdd)
-<p>&nbsp;</p>
+
 •	To showcase a change in the application feature or code, we updated the application with a new logo and triggered the pipeline. This process dynamically updates the application deployment manifest file with the new image tag, ensuring that the final feature update is automatically reflected as shown below.
 <p>&nbsp;</p>
 
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/4c60dbc9-c9fb-41d7-8603-6364887cd178)
-<p>&nbsp;</p>
+
 •	To monitor the health and performance of Kubernetes clusters, Prometheus is installed and integrated to collect metrics from nodes and services. These metrics and logs are then visualized through user-friendly dashboards in Grafana. Together, Prometheus and Grafana act as a powerful monitoring suite, enabling analysis and troubleshooting of application and optimization issues. 
 <p>&nbsp;</p>
 
