@@ -1,11 +1,9 @@
-#### Application Deployment on Kubernetes using GitOps approach ArgoCD
-<p>&nbsp;</p>
+### Application Deployment on Kubernetes using GitOps approach ArgoCD
 <p>&nbsp;</p>
 This DevOps lifecycle project focused on a Java-based Spring Boot application called Pet-clinic. The main goal is to use the GitOps tool ArgoCD to automate deployment operations, while integrating various DevOps tools at different stages to streamline tasks and ensure efficient operations.
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 
-### Streamlining the Workflow:
+#### Streamlining the Workflow:
 •	The project utilizes GitHub to manage code changes and maintain a single source of truth, ensuring version control.
 •	Jenkins served as the workhorse, every time a change is pushed to the Git repository, triggering a build pipeline, automating builds, tests, and deployments.
 •	Maven handles building the application, compiling the source code into a deployable .jar file.
@@ -23,15 +21,14 @@ This DevOps lifecycle project focused on a Java-based Spring Boot application ca
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-### Benefits of Automation:
+#### Benefits of Automation:
 •	Faster Deployments: Automated builds and deployments lead to quicker delivery times.
 •	Improved Quality: Static code analysis and vulnerability scanning ensure code quality and security.
 •	Reduced Errors: Repeatable and automated processes minimize deployment errors.
 •	Increased Efficiency: DevOps tools streamline workflows, freeing up developer time.
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 
-### Demonstration:
+#### Demonstration:
 •	Created two t2.medium EC2 instances and in one of the machines installed Jenkins, Maven and docker as shown below,
 <p>&nbsp;</p>
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/e8e21c4c-5e18-4089-8224-a1ec60024bda)
