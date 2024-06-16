@@ -4,6 +4,9 @@ This DevOps lifecycle project focused on a Java-based Spring Boot application ca
 <p>&nbsp;</p>
 
 #### Streamlining the Workflow:
+
+![image](https://github.com/intuiter/Project-petapp/assets/135228471/55ca1daf-8588-464a-92b0-29617949e3a8)
+
 •	The project utilizes GitHub to manage code changes and maintain a single source of truth, ensuring version control.
 •	Jenkins served as the workhorse, every time a change is pushed to the Git repository, triggering a build pipeline, automating builds, tests, and deployments.
 •	Maven handles building the application, compiling the source code into a deployable .jar file.
@@ -31,8 +34,10 @@ This DevOps lifecycle project focused on a Java-based Spring Boot application ca
 #### Demonstration:
 •	Created two t2.medium EC2 instances and in one of the machines installed Jenkins, Maven and docker as shown below,
 <p>&nbsp;</p>
+
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/e8e21c4c-5e18-4089-8224-a1ec60024bda)
 <p>&nbsp;</p>
+
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/3c0f8435-9221-4186-946e-1ce9d06d3139)
 <p>&nbsp;</p>
 •	Integrated Jenkins wit Version control Git to get notified and push events post commits.
