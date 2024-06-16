@@ -1,4 +1,4 @@
-### Application Deployment on Kubernetes using GitOps approach ArgoCD
+# Application Deployment on Kubernetes using GitOps approach ArgoCD
 <p>&nbsp;</p>
 This DevOps lifecycle project focused on a Java-based Spring Boot application called Pet-clinic. The main goal is to use the GitOps tool ArgoCD to automate deployment operations, while integrating various DevOps tools at different stages to streamline tasks and ensure efficient operations.
 <p>&nbsp;</p>
@@ -22,7 +22,6 @@ This DevOps lifecycle project focused on a Java-based Spring Boot application ca
 •	On each code update in Git, the CI/CD pipeline triggered a build. The deployment manifest file was dynamically updated with the latest image tag from ECR.
 •	ArgoCD continuously monitors the Git repository for changes. When changes are detected, it automatically synchronizes with the Kubernetes cluster, ensuring the pods running the application reflect the latest updates.
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 
 ## Benefits of Automation:
 •	Faster Deployments: Automated builds and deployments lead to quicker delivery times.
@@ -40,14 +39,12 @@ This DevOps lifecycle project focused on a Java-based Spring Boot application ca
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/3c0f8435-9221-4186-946e-1ce9d06d3139)
 
 •	Integrated Jenkins wit Version control Git to get notified and push events post commits.
-<p>&nbsp;</p>
 
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/4cf1ae4c-53ce-44c7-9f4e-4de1c6ccf056)
 <p>&nbsp;</p>
 •	On the other EC2 instance created Sonarqube installed, along with docker and Jfrog will run as a container
 ->>>>> docker run --name artifactory -v /jfrog/artifactory/var:/var/opt/jfrog/artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-oss:latest
-•	The volume mapping in the host machine for which folder we are doing should have the same user id and permission as the folder inside the container. Only then you will have access on the host machine of that volume.
-•	For EC2, port 8081 and 8082 should be enabled,
+•	The volume mapping in the host machine for which folder we are doing should have the same user id and permission as the folder inside the container. Only then you will have access on the host machine of that volume. For EC2, port 8081 and 8082 should be enabled,
 <p>&nbsp;</p>
 
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/7646eeaf-d1a0-43ec-b1dc-8bde88004ddd)
