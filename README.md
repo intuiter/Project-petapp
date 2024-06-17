@@ -1,7 +1,7 @@
 # Application Deployment on Kubernetes using GitOps approach ArgoCD
 <p>&nbsp;</p>
 Project Presentation Youtube Link: https://youtu.be/j131HImFMV0
-
+<p>&nbsp;</p>
 This DevOps lifecycle project focused on a Java-based Spring Boot application called Pet-clinic. The main goal is to use the GitOps tool ArgoCD to automate deployment operations, while integrating various DevOps tools at different stages to streamline tasks and ensure efficient operations.
 <p>&nbsp;</p>
 
