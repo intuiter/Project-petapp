@@ -11,18 +11,31 @@ This DevOps lifecycle project focused on a Java-based Spring Boot application ca
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/55ca1daf-8588-464a-92b0-29617949e3a8)
 
 •	The project utilizes GitHub to manage code changes and maintain a single source of truth, ensuring version control.
+
 •	Jenkins served as the workhorse, every time a change is pushed to the Git repository, triggering a build pipeline, automating builds, tests, and deployments.
+
 •	Maven handles building the application, compiling the source code into a deployable .jar file.
+
 •	Sonarqube analyzes the code for potential bugs and vulnerabilities, promoting code quality.
+
 •	JFrog Artifactory acted as a secure repository for storing the generated .jar file.
+
 •	Utilized Docker to package the application into a container image, enabling portability and consistency across environments. Each build is tagged with a unique identifier for version control.
+
 •	Trivy scans the Docker image for security vulnerabilities, ensuring a secure deployment.
+
 •	Dive analyzes the Docker image size and suggests optimizations to minimize resource usage.
+
 •	The final Docker image was pushed to a secure Amazon Elastic Container Registry (ECR) repository.
+
 •	Old, unused Docker images were removed after being pushed to ECR for efficient storage management.
+
 •	Upon a successful CI build, the CD pipeline is triggered, automating deployment. Instead of manual deployments, we employed ArgoCD following the GitOps approach. ArgoCD leverages Git as the single source of truth, managing infrastructure configurations.
+
 •	Deployment manifests residing in a Git repository define the infrastructure configuration for application deployment on Kubernetes. These manifests include service definitions, deployment configurations, database details, and configuration maps.
+
 •	On each code update in Git, the CI/CD pipeline triggered a build. The deployment manifest file was dynamically updated with the latest image tag from ECR.
+
 •	ArgoCD continuously monitors the Git repository for changes. When changes are detected, it automatically synchronizes with the Kubernetes cluster, ensuring the pods running the application reflect the latest updates.
 <p>&nbsp;</p>
 
