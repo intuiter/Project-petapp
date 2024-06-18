@@ -3,7 +3,7 @@
 
 Project Presentation Youtube Link: https://youtu.be/j131HImFMV0
 <p>&nbsp;</p>
-This DevOps project is focused on a Java-based Spring Boot application called Pet-clinic. The main goal is to use the GitOps tool ArgoCD to automate deployment operations, while integrating various DevOps tools at different stages to streamline tasks and ensure efficient operations.
+This DevOps project focused on a Java-based Spring Boot application called Pet Clinic. The main goal was to utilize ArgoCD to automate the deployment of desired application states in specified target environments on Kubernetes. I integrated Git webhooks and various DevOps tools within the Jenkins CI/CD pipeline to streamline tasks and ensure efficient operations.
 <p>&nbsp;</p>
 
 ## Streamlining the Workflow:
