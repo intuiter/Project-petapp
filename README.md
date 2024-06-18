@@ -59,7 +59,8 @@ This DevOps project focused on a Java-based Spring Boot application called Pet C
 ![image](https://github.com/intuiter/Project-petapp/assets/135228471/4cf1ae4c-53ce-44c7-9f4e-4de1c6ccf056)
 <p>&nbsp;</p>
 •	On the other EC2 instance created Sonarqube installed, along with docker and Jfrog will run as a container
-->>>>> docker run --name artifactory -v /jfrog/artifactory/var:/var/opt/jfrog/artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-oss:latest
+  ->>>>> docker run --name artifactory -v /jfrog/artifactory/var:/var/opt/jfrog/artifactory -d -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-oss:latest
+
 •	The volume mapping in the host machine for which folder we are doing should have the same user id and permission as the folder inside the container. Only then you will have access on the host machine of that volume. For EC2, port 8081 and 8082 should be enabled,
 <p>&nbsp;</p>
 
